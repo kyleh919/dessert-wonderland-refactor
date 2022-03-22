@@ -6,15 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier \"**/*.+(js|json|css|html|md)\" --write"
   },
   "dependencies": {
+    "@testing-library/react": "^12.1.4",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "eslint": "8.11.0",
-    "eslint-config-next": "12.1.0"
+    "eslint-config-next": "12.1.0",
+    "prettier": "^2.6.0"
   }
 }

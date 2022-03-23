@@ -1,1 +1,7 @@
-export default function Layout() {}
+export default function Layout({ children }) {
+  return (
+    <>
+      <main>{children}</main>
+    </>
+  )
+}

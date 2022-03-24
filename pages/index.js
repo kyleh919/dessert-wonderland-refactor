@@ -1,7 +1,13 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
+import styled from 'styled-components'
+
 import styles from '../styles/Home.module.css'
+
+const Header = styled.h1`
+  color: blue;
+  font-family: Nunito;
+`
 
 export default function Home() {
   return (
@@ -13,7 +19,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Welcome to Dessert Wonderland</h1>
+        <Header>Welcome to Dessert Wonderland</Header>
 
         <Link href="/example/next-example">To Next example page</Link>
       </main>

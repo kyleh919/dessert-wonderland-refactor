@@ -1,13 +1,13 @@
-import Head from 'next/head'
-import Link from 'next/link'
-import styled from 'styled-components'
+import Head from 'next/head';
+import Link from 'next/link';
+import styled from 'styled-components';
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 
 const Header = styled.h1`
   color: blue;
   font-family: Nunito;
-`
+`;
 
 export default function Home() {
   return (
@@ -24,5 +24,5 @@ export default function Home() {
         <Link href="/example/next-example">To Next example page</Link>
       </main>
     </div>
-  )
+  );
 }

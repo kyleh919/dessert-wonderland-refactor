@@ -1,4 +1,16 @@
+import styled from 'styled-components';
+
 import { PAGE_INFO_MAP } from '../../../page-info/pageInfo';
+
+const NavList = styled.ul`
+  display: flex;
+  padding: 0px;
+`;
+
+const NavListItem = styled.li`
+  margin: 28px;
+  list-style: none;
+`;
 
 export default function navBuilder() {
   function build() {
@@ -7,17 +19,17 @@ export default function navBuilder() {
 
     return (
       <nav id="nav-list">
-        <ul>
-          <li className="nav-items">
+        <NavList>
+          <NavListItem className="nav-items">
             <a href="./pages/menus.html">Menus</a>
-          </li>
-          <li className="nav-items">
+          </NavListItem>
+          <NavListItem className="nav-items">
             <a href="#">Dessert Artists</a>
-          </li>
-          <li className="nav-items">
+          </NavListItem>
+          <NavListItem className="nav-items">
             <a href="./pages/order-ahead.html">Order Ahead</a>
-          </li>
-        </ul>
+          </NavListItem>
+        </NavList>
       </nav>
     );
   }

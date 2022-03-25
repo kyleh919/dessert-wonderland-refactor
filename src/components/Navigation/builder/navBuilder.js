@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styled from 'styled-components';
 
 import { PAGE_INFO_MAP } from '../../../page-info/pageInfo';
@@ -12,22 +13,33 @@ const NavListItem = styled.li`
   list-style: none;
 `;
 
+const NavLink = styled.a`
+  color: black;
+  text-decoration: none;
+`;
+
 export default function navBuilder() {
   function build() {
     console.log('building nav links...');
     console.log('PAGE_INFO_MAP = ', PAGE_INFO_MAP);
 
     return (
-      <nav id="nav-list">
+      <nav>
         <NavList>
-          <NavListItem className="nav-items">
-            <a href="./pages/menus.html">Menus</a>
+          <NavListItem>
+            <Link href="" passHref>
+              <NavLink>Menus</NavLink>
+            </Link>
           </NavListItem>
-          <NavListItem className="nav-items">
-            <a href="#">Dessert Artists</a>
+          <NavListItem>
+            <Link href="" passHref>
+              <NavLink>Dessert Artists</NavLink>
+            </Link>
           </NavListItem>
-          <NavListItem className="nav-items">
-            <a href="./pages/order-ahead.html">Order Ahead</a>
+          <NavListItem>
+            <Link href="" passHref>
+              <NavLink>Order Ahead</NavLink>
+            </Link>
           </NavListItem>
         </NavList>
       </nav>
